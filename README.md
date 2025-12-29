@@ -10,17 +10,17 @@ The Girasole (40) will be the self-maid keyboard which targets 30% ortholinear l
 ### Parts need to be prepared/purchased
 T.B.D
 
-|Part|Quantity|Remarks|
-|---|---|---|
-|Wired controller board|1|T.B.D.(considering to use RP2040-Zero)|
-|Conthrough|x||
-|USB-C cable|1||
-|Choc socket|40|e.g. Kailh PG1350 KeySwitches Contact (CPG135001S30)|
-|Choc V2 switch|40||
-|Diode|x||
-|Keycap|40||
-|Touchpad Module|1|Considering to use Azoteq TPS65|
-|xxx|x|xxx|
+|Part|Quantity|Where I bought it|Remarks|
+|---|---|---|---|
+|Wired controller board|1||T.B.D.(considering to use RP2040-Zero)|
+|Conthrough|x|||
+|USB-C cable|1|||
+|Choc socket|40||e.g. Kailh PG1350 KeySwitches Contact (CPG135001S30)|
+|Choc V2 switch|40|||
+|Diode|x|||
+|Keycap|40|||
+|Touchpad Module|1|MOUSER|Considering to use Azoteq TPS65.|
+|xxx|x|xxx|xxx|
 
 ### Parts need to be ordered/printed
 T.B.D
