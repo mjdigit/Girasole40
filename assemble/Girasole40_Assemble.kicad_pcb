@@ -57814,50 +57814,6 @@
 		(net 47)
 		(uuid "cec96a5e-e4e7-453b-91eb-d2a036252763")
 	)
-	(gr_circle
-		(center 154 65.5)
-		(end 155 65.5)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.SilkS")
-		(uuid "377658a2-f437-42bb-ad97-5670926ad5bf")
-	)
-	(gr_circle
-		(center 157 64)
-		(end 158 64)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.SilkS")
-		(uuid "85f8df23-dd35-4e2d-a38a-cd4a760e238d")
-	)
-	(gr_circle
-		(center 157 70)
-		(end 158 70)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.SilkS")
-		(uuid "a09c246c-7ec6-461c-b5e0-153c4c0d4f44")
-	)
-	(gr_circle
-		(center 154 68.5)
-		(end 155 68.5)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.SilkS")
-		(uuid "bee1c497-049e-4bcc-bc25-060aec2b004b")
-	)
 	(gr_rect
 		(start 116 23.75)
 		(end 181 72.75)
@@ -57868,28 +57824,6 @@
 		(fill no)
 		(layer "F.SilkS")
 		(uuid "dc313189-ac2e-4dc9-9ac6-88ba013aece9")
-	)
-	(gr_circle
-		(center 157 67)
-		(end 158 67)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.SilkS")
-		(uuid "e0e5ed16-c352-4658-b3c8-6e6c977a59e7")
-	)
-	(gr_circle
-		(center 154 71.5)
-		(end 155 71.5)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.SilkS")
-		(uuid "fa767076-a824-4471-bbbe-3d6914af8d2e")
 	)
 	(gr_line
 		(start 153.96 40.83)
