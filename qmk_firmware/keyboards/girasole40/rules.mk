@@ -1,0 +1,8 @@
+POINTING_DEVICE_ENABLE = yes
+I2C_DRIVER_REQUIRED = yes
+POINTING_DEVICE_DRIVER = azoteq_iqs5xx
+
+COMBO_ENABLE = yes
+
+### Debugging
+#CONSOLE_ENABLE = yes
