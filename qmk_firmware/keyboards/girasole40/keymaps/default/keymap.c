@@ -5,6 +5,8 @@
 
 enum custom_keycodes {
   DRGSCRL = QK_KB_0, // Set drag scroll mode
+  CPIPLS, // Increase CPI for 100.
+  CPIMNS, // Decrease CPI for 100.
 };
 
 enum keymap_layers {
@@ -41,11 +43,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_UPPER0] = LAYOUT(
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
-    KC_NO          , KC_NO         , KC_NO         , KC_NO         , KC_NO                                                                 , KC_HOME       , KC_PGUP       , KC_PSCR       , KC_SCRL       , KC_PAUS       ,
+    KC_NO          , KC_NO         , KC_NO         , CPIPLS        , KC_NO                                                                 , KC_HOME       , KC_PGUP       , KC_PSCR       , KC_SCRL       , KC_PAUS       ,
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
     KC_NO          , KC_NO         , KC_NO         , DRGSCRL       , KC_NO                                                                 , KC_LEFT       , KC_DOWN       , KC_UP         , KC_RGHT       , KC_BSPC       ,
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
-    KC_LCTL        , KC_LSFT       , KC_NO         , KC_NO         , KC_NO                                                                 , KC_END        , KC_PGDN       , KC_DEL        , KC_NO         , KC_INS        ,
+    KC_LCTL        , KC_LSFT       , KC_NO         , CPIMNS        , KC_NO                                                                 , KC_END        , KC_PGDN       , KC_DEL        , KC_NO         , KC_INS        ,
     //             |-------------------|---------------|-------------------|-------------------|---------------|---------------|-------------------|-------------------|---------------|-------------------|
                     KC_TRNS            , KC_TRNS       , KC_TRNS           , LALT(KC_GRAVE)    , MS_WHLD       , MS_WHLU       , KC_TRNS           , KC_TRNS           , KC_TRNS       , KC_NO
   ),
@@ -81,11 +83,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_UPPER1] = LAYOUT(
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
-    KC_NO          , KC_NO         , KC_NO         , KC_NO         , KC_NO                                                                 , KC_HOME       , KC_PGUP       , KC_PSCR       , KC_SCRL       , KC_PAUS       ,
+    KC_NO          , KC_NO         , KC_NO         , CPIPLS        , KC_NO                                                                 , KC_HOME       , KC_PGUP       , KC_PSCR       , KC_SCRL       , KC_PAUS       ,
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
     KC_NO          , KC_NO         , KC_NO         , DRGSCRL       , KC_NO                                                                 , KC_LEFT       , KC_DOWN       , KC_UP         , KC_RGHT       , KC_BSPC       ,
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
-    KC_LCTL        , KC_LSFT       , KC_NO         , KC_NO         , KC_NO                                                                 , KC_END        , KC_PGDN       , KC_DEL        , KC_NO         , KC_INS        ,
+    KC_LCTL        , KC_LSFT       , KC_NO         , CPIMNS        , KC_NO                                                                 , KC_END        , KC_PGDN       , KC_DEL        , KC_NO         , KC_INS        ,
     //             |-------------------|---------------|-------------------|-------------------|---------------|---------------|-------------------|-------------------|---------------|-------------------|
                     KC_TRNS            , KC_TRNS       , KC_TRNS           , LCTL(KC_SPC)      , MS_WHLD       , MS_WHLU       , KC_TRNS           , KC_TRNS           , KC_TRNS       , KC_NO
   ),
@@ -152,9 +154,21 @@ static bool drag_scrolling = false;
 #define PROCESS_OVERRIDE_BEHAVIOR false
 #define PROCESS_USUAL_BEHAVIOR    true
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  uint16_t cpi;
+
   switch (keycode) {
   case DRGSCRL:
     drag_scrolling = record->event.pressed? true: false;
+    break;
+  case CPIPLS:
+    cpi = azoteq_iqs5xx_get_cpi();
+    cpi = (cpi + 100 > 2000)? 2000: cpi + 100;
+    azoteq_iqs5xx_set_cpi(cpi);
+    break;
+  case CPIMNS:
+    cpi = azoteq_iqs5xx_get_cpi();
+    cpi = (cpi < 100)? 0: cpi - 100;
+    azoteq_iqs5xx_set_cpi(cpi);
     break;
   default:
     break;
