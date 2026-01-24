@@ -10,11 +10,11 @@ enum custom_keycodes {
 };
 
 enum keymap_layers {
-  _BASE0,
+  _BASE0, // Windows Layers
   _LOWER0,
   _UPPER0,
   _SPEC0,
-  _BASE1,
+  _BASE1, // Mac Layers
   _LOWER1,
   _UPPER1,
   _SPEC1,
@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
     KC_LCTL        , KC_LSFT       , KC_NO         , CPIMNS        , KC_NO                                                                 , KC_END        , KC_PGDN       , KC_DEL        , KC_NO         , KC_INS        ,
     //             |-------------------|---------------|-------------------|-------------------|---------------|---------------|-------------------|-------------------|---------------|-------------------|
-                    KC_TRNS            , KC_TRNS       , KC_TRNS           , LCTL(KC_SPC)      , MS_WHLD       , MS_WHLU       , KC_TRNS           , KC_TRNS           , KC_TRNS       , KC_NO
+                    KC_TRNS            , KC_TRNS       , KC_TRNS           , LCA(KC_SPC)       , MS_WHLD       , MS_WHLU       , KC_TRNS           , KC_TRNS           , KC_TRNS       , KC_NO
   ),
   [_SPEC1] = LAYOUT(
     //    ---------|---------------|---------------|---------------|---------------|                                                        ---------------|---------------|---------------|---------------|---------------|
@@ -135,6 +135,8 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case RCTL_T(KC_SLSH):
     case RSFT_T(KC_DOT):
+    case RSFT_T(KC_RBRC):
+    case RCTL_T(KC_BSLS):
     case LSFT_T(KC_X):
     case LCTL_T(KC_Z):
     case LSFT_T(KC_LEFT):
