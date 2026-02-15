@@ -18,8 +18,8 @@ The Girasole40 is the self-maid compact lowprofile keyboard which targets 30% or
 |Touchpad Module TPS65 (or clone module)|1|MOUSER|I confirmed [GR-Trackpad65](https://github.com/geek-rabb1t/GR-Trackpad65) works for this keyboard|
 |Polycarbonate sheet for touchpad (0.5mm thickness) <br/>or<br/> PVC sheet for touchpad (0.5mm thikness)|1|Amazon|Need to be cut to suit TPS65|
 |PET double-sided adhesive sheet|1|Amazon|Need to be cut to suit TPS65|
-|M2 Spacer (3.5mm or thicker)|4|yushakobo|Spacers for between main plate and touchpad mounting plate|
-|M2 Spacer (4.0mm or thicker)|6|yushakobo|Spacers for between top plate and bottom plate.|
+|M2 Spacer (3.5mm)|4|yushakobo|Spacers for between main plate and touchpad mounting plate|
+|M2 Spacer (5.0mm)|6|yushakobo|Spacers for between top plate and bottom plate.|
 |M2 screw (3.5mm)|20|yushakobo|-|
 |FPC cable (6pin, 0.5mm pitch, 50mm length)|1|Amazon|-|
 |Diode|40|MOUSER|1N4148W|
@@ -27,7 +27,6 @@ The Girasole40 is the self-maid compact lowprofile keyboard which targets 30% or
 |Capaciter 1608 10uF|1|akizukidenshi|-|
 |FPC socket (6pin, 0.5mm pitch)|1|Amazon|-|
 |Rubber feet|6|Amazon|-|
-
 
 ### Parts need to be ordered/printed
 For the plate stacking configuration
@@ -38,6 +37,14 @@ For the plate stacking configuration
 |Top Plate|1|<image src="images/plate-top.png" height="100px"><br/>gerber/top.zip|
 |Bottom plate|1|<image src="images/plate-bottom.png" height="100px"><br/>gerber/bottom.zip|
 |Touchpad mounting plate|1|<image src="images/plate-touchpad.png" height="100px"><br/>gerber/touchpad.zip|
+
+### Parts need for gasket mount case
+
+|Part|Quantity|Remarks|
+|---|---|---|
+|M2 x 8mm|4| |
+|1.6mm height M2 nut|4| |
+|diameter 4mm, 0.2mm, 5mm spring|2| |
 
 ## Build Guide (plate stacking configuration)
 ### Assemble passive components on the main PCB
