@@ -2,44 +2,55 @@
 Girasole40はタッチパッドを中央に配置した、30%オーソリニアレイアウトのロープロファイルコンパクトキーボードです。<br/>
 The Girasole40 is the self-maid compact lowprofile keyboard which targets 30% ortholinear layout with a touchpad.
 
-![Picture of Girasole40 without case](images/Girasole40-caseless.jpg)
+Caseless (PCB sandwich mount)
+![Picture of Girasole40 caseless](images/Girasole40-caseless.jpg)
+
+With case (poron gasket mount)
+![Picture of Girasole40 with case](images/Girasole40-withcase.jpg)
 
 ## Parts List
 
 ### Parts need to be prepared/purchased
 
-|Part|Quantity|Where I bought it|Remarks|
-|---|---|---|---|
-|Wired controller board|1|AliExpress|RP2040-Zero (w/ pin headers)|
-|USB-C cable|1|-||
-|Choc socket|40|yushakobo|e.g. Kailh PG1350 KeySwitches Contact (CPG135001S30)|
-|Choc V2 switch|40|AliExpress||
-|Keycap|40|Amazon||
-|Touchpad Module TPS65 (or clone module)|1|MOUSER|I confirmed [GR-Trackpad65](https://github.com/geek-rabb1t/GR-Trackpad65) works for this keyboard|
-|Polycarbonate sheet for touchpad (0.5mm thickness) <br/>or<br/> PVC sheet for touchpad (0.5mm thikness)|1|Amazon|Need to be cut to suit TPS65|
-|PET double-sided adhesive sheet|1|Amazon|Need to be cut to suit TPS65|
-|M2 Spacer (3.5mm or thicker)|4|yushakobo|Spacers for between main plate and touchpad mounting plate|
-|M2 Spacer (4.0mm or thicker)|6|yushakobo|Spacers for between top plate and bottom plate.|
-|M2 screw (3.5mm)|20|yushakobo|-|
-|FPC cable (6pin, 0.5mm pitch, 50mm length)|1|Amazon|-|
-|Diode|40|MOUSER|1N4148W|
-|Resister 1608 1Kohm|2|akizukidenshi|-|
-|Capaciter 1608 10uF|1|akizukidenshi|-|
-|FPC socket (6pin, 0.5mm pitch)|1|Amazon|-|
-|Rubber feet|6|Amazon|-|
-
+|Part|Quantity|caseless|w/ case|Remarks|
+|---|---|---|---|---|
+|Wired controller board|1|X|X|RP2040-Zero (w/ pin headers)|
+|USB-C cable|1|X|X||
+|Choc socket|40|X|X|e.g. Kailh PG1350 KeySwitches Contact (CPG135001S30)|
+|Choc V2 switch|40|X|X||
+|Keycap|40|X|X||
+|Touchpad Module TPS65 (or clone module)|1|X|X|I confirmed [GR-Trackpad65](https://github.com/geek-rabb1t/GR-Trackpad65) works for this keyboard|
+|Polycarbonate sheet for touchpad (0.5mm thickness) <br/>or<br/> PVC sheet for touchpad (0.5mm thikness)|1|X|X|Need to be cut to suit TPS65|
+|PET double-sided adhesive sheet|1|X|X|Need to be cut to suit TPS65|
+|M2 Spacer (3.5mm)|4|X|X|Spacers for between main plate and touchpad mounting plate|
+|M2 Spacer (5.0mm)|6|X|X|Spacers for between top plate and bottom plate.|
+|M2 screw (3.5mm)|14|X|X|-|
+|Additional M2 screw (3.5mm) for caseless|6|X|-|-|
+|FPC cable (6pin, 0.5mm pitch, 50mm length)|1|X|X|-|
+|Diode|40|X|X|1N4148W|
+|Resister 1608 1Kohm|2|X|X|-|
+|Capaciter 1608 10uF|1|X|X|-|
+|FPC socket (6pin, 0.5mm pitch)|1|X|X|-|
+|Rubber feet|6|X|X|-|
+|M2 screw (8mm)|4|-|X||
+|1.6mm height M2 nut|4|-|X||
+|stainless spring (0.4mm wire, d 4mm, L 5mm)|2|-|X||
+|poron sheet (L 15mm, W 5mm, d 3mm)|8|-|X||
 
 ### Parts need to be ordered/printed
 For the plate stacking configuration
 
-|Part|Quantity|Remarks|
-|---|---|---|
-|Main PCB|1|<image src="images/plate-main.png" height="100px"><br/>gerber/main.zip|
-|Top Plate|1|<image src="images/plate-top.png" height="100px"><br/>gerber/top.zip|
-|Bottom plate|1|<image src="images/plate-bottom.png" height="100px"><br/>gerber/bottom.zip|
-|Touchpad mounting plate|1|<image src="images/plate-touchpad.png" height="100px"><br/>gerber/touchpad.zip|
+|Part|Quantity|caseless|w/ case|Remarks|
+|---|---|---|---|---|
+|Main PCB|1|X|X|<image src="images/plate-main.png" height="100px"><br/>gerber/main.zip|
+|Top Plate|1|X|X|<image src="images/plate-top.png" height="100px"><br/>gerber/top.zip|
+|Bottom plate|1|X|-|<image src="images/plate-bottom.png" height="100px"><br/>gerber/bottom.zip|
+|Touchpad mounting plate|1|X|X|<image src="images/plate-touchpad.png" height="100px"><br/>gerber/touchpad.zip|
+|Top case|1|-|X|<image src="images/case-top.png" height="100px"><br/>case/Girasole40-topcase.step|
+|Bottom case|1|-|X|<image src="images/case-bottom.png" height="100px"><br/>case/Girasole40-bottomcase.step|
 
-## Build Guide (plate stacking configuration)
+
+## Build Guide (Caseless; PCB sandwich mount)
 ### Assemble passive components on the main PCB
 Solder a FPC socket, resisters, a capaciter on front side of the main PCB.
 
@@ -111,12 +122,42 @@ Fix the touchpad mounting plate and Main PCB.
 
 Fix the Top Plate and the Bottom Plate. Then put rubber feats.
 
+Note) If you want to build "with case" configuration, please skip this step.
+
 ![Build Guide - Construction 05](images/BuildGuide-construction-05.jpg)
 
 Finally, put keycaps.
 
 ![Build Guide - Construction 06](images/BuildGuide-construction-06.jpg)
 
+
+## Build Guide (with case)
+Please build the keyboard follows "Build Guide (Caseless; PCB sandwich mount)" towards fix the touchpad mounting plate and Main PCB.
+
+![Build Guide - Case 01](images/BuildGuide-case-01.jpg)
+
+Put the spring into the holes on center of the bottom case.
+
+![Build Guide - Case 02](images/BuildGuide-case-02.jpg)
+
+Put the M2 nut into the slots on left & right side of the bottom case.
+
+![Build Guide - Case 03](images/BuildGuide-case-03.jpg)
+![Build Guide - Case 04](images/BuildGuide-case-04.jpg)
+
+Put the poron sheet onto the grooves on left & right side of the top & bottom case.
+
+![Build Guide - Case 05](images/BuildGuide-case-05.jpg)
+
+Put the keyboard plate on the bottom case, then put the top case on it.
+
+![Build Guide - Case 06](images/BuildGuide-case-06.jpg)
+
+![Build Guide - Case 07](images/BuildGuide-case-07.jpg)
+
+Fix the top & bottom case by screw holes on left & right side using M2 screw (8mm).
+
+![Build Guide - Case 08](images/BuildGuide-case-08.jpg)
 
 ## QMK Firmware
 ### Firmware binary of default layout (no VIA support)
