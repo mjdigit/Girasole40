@@ -506,7 +506,7 @@
       "plot": "../gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Girasole40_Assemble.step",
       "svg": "",
       "vrml": ""
     },
