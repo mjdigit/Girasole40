@@ -57814,6 +57814,72 @@
 		(net 47)
 		(uuid "cec96a5e-e4e7-453b-91eb-d2a036252763")
 	)
+	(gr_circle
+		(center 157 64)
+		(end 158 64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "579327c1-5f5c-45c8-917b-750e7e95ead0")
+	)
+	(gr_circle
+		(center 157 67)
+		(end 158 67)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "185a635a-5cde-4f78-a670-4e6ee700e73b")
+	)
+	(gr_circle
+		(center 154 68.5)
+		(end 155 68.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "553b781f-b6da-4e17-98a9-8dec4b772619")
+	)
+	(gr_circle
+		(center 157 70)
+		(end 158 70)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "59c0aa19-8ec7-4146-8d25-17097e8a0820")
+	)
+	(gr_circle
+		(center 154 65.5)
+		(end 155 65.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "54d70b1e-8c23-4c1c-8663-7fdb08570cfd")
+	)
+	(gr_circle
+		(center 154 71.5)
+		(end 155 71.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "32213b4c-1028-4382-91d3-a2ab7a95aa44")
+	)
 	(gr_rect
 		(start 116 23.75)
 		(end 181 72.75)
