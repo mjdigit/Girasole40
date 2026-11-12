@@ -1,20 +1,22 @@
-# tps43_ek
+# Girasole40
 
-![tps43_ek](imgur.com image replace me!)
-
-*A short description of the keyboard/project*
+Girasole40 is a 40-key ortholinear keyboard with a central IQS5xx touchpad.
 
 * Keyboard Maintainer: [digit](https://github.com/mjdigit)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: Girasole40 PCB with an RP2040-Zero controller
+* Hardware Availability: https://github.com/mjdigit/Girasole40
 
 Make example for this keyboard (after setting up your build environment):
 
-    make tps43_ek:default
+    make girasole40:default
+
+VIA/Remap-compatible firmware:
+
+    make girasole40:via
 
 Flashing example for this keyboard:
 
-    make tps43_ek:default:flash
+    make girasole40:default:flash
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 

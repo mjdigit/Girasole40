@@ -162,3 +162,24 @@ Fix the top & bottom case by screw holes on left & right side using M2 screw (8m
 ## QMK Firmware
 ### Firmware binary of default layout (no VIA support)
 [girasole40_default.uf2](girasole40_default.uf2)
+
+### VIA / Remap support
+
+[girasole40_via.uf2](girasole40_via.uf2)
+
+Build the VIA-enabled firmware from a QMK checkout containing the
+`qmk_firmware/keyboards/girasole40` directory:
+
+```text
+make girasole40:via
+```
+
+Flash `girasole40_via.uf2`, then load the matching local definition:
+
+- VIA: `layout/girasole40_via.json`
+- Remap: `layout/girasole40_remap.json`
+
+The VIA keymap keeps the default eight layers, touchpad controls, and combos.
+The custom keycode section exposes drag-scroll mode and the CPI up/down keys.
+Clear EEPROM once after the first VIA flash if an older dynamic keymap is
+already stored on the controller.
