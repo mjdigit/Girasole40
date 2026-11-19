@@ -10,9 +10,9 @@ Make example for this keyboard (after setting up your build environment):
 
     make girasole40:default
 
-VIA/Remap-compatible firmware:
+Vial-compatible firmware with GUI-editable combos:
 
-    make girasole40:via
+    make girasole40:vial
 
 Flashing example for this keyboard:
 

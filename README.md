@@ -160,26 +160,30 @@ Fix the top & bottom case by screw holes on left & right side using M2 screw (8m
 ![Build Guide - Case 08](images/BuildGuide-case-08.jpg)
 
 ## QMK Firmware
-### Firmware binary of default layout (no VIA support)
+### Firmware binary of default layout (no Vial support)
 [girasole40_default.uf2](girasole40_default.uf2)
 
-### VIA / Remap support
+### Vial support
 
-[girasole40_via.uf2](girasole40_via.uf2)
+[girasole40_vial.uf2](girasole40_vial.uf2)
 
-Build the VIA-enabled firmware from a QMK checkout containing the
+Build the Vial-enabled firmware from a Vial-QMK checkout containing the
 `qmk_firmware/keyboards/girasole40` directory:
 
 ```text
-make girasole40:via
+make girasole40:vial
 ```
 
-Flash `girasole40_via.uf2`, then load the matching local definition:
+Flash `girasole40_vial.uf2`, then open the keyboard in the Vial desktop app.
+The keyboard definition is embedded in the firmware, so no JSON import is
+required. `layout/girasole40_vial.json` is retained as a readable copy of that
+definition.
 
-- VIA: `layout/girasole40_via.json`
-- Remap: `layout/girasole40_remap.json`
+The Vial keymap keeps the default eight layers and touchpad controls. The
+Combo tab provides 16 editable entries; clearing EEPROM restores the seven
+original combos as defaults. The custom keycode section exposes drag-scroll
+mode and the CPI up/down keys.
 
-The VIA keymap keeps the default eight layers, touchpad controls, and combos.
-The custom keycode section exposes drag-scroll mode and the CPI up/down keys.
-Clear EEPROM once after the first VIA flash if an older dynamic keymap is
-already stored on the controller.
+When Vial asks to unlock the keyboard, hold the top-left and top-right keys
+(Q and P in the default base layer). Clear EEPROM once after replacing an
+older VIA firmware so the Vial keymap and default combos are initialized.

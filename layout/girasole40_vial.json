@@ -2,10 +2,7 @@
   "name": "Girasole40",
   "vendorId": "0xFEED",
   "productId": "0xBEEF",
-  "lighting": {
-    "extends": "none",
-    "keycodes": "qmk"
-  },
+  "lighting": "none",
   "matrix": {
     "rows": 4,
     "cols": 10
