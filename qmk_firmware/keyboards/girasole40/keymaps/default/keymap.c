@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include QMK_KEYBOARD_H
+#include "drivers/sensors/azoteq_iqs5xx.h"
 
 enum custom_keycodes {
   DRGSCRL = QK_KB_0, // Set drag scroll mode

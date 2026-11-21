@@ -184,6 +184,10 @@ Combo tab provides 16 editable entries; clearing EEPROM restores the seven
 original combos as defaults. The custom keycode section exposes drag-scroll
 mode and the CPI up/down keys.
 
+Touchpad gestures include tap followed by a second tap-and-hold for dragging,
+and a three-finger tap for middle click. The IQS5xx I2C bus runs at 100 kHz for
+stable communication.
+
 When Vial asks to unlock the keyboard, hold the top-left and top-right keys
 (Q and P in the default base layer). Clear EEPROM once after replacing an
 older VIA firmware so the Vial keymap and default combos are initialized.

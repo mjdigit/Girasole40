@@ -14,6 +14,10 @@ Vial-compatible firmware with GUI-editable combos:
 
     make girasole40:vial
 
+The touchpad supports tap-and-drag by tapping once and holding the second tap,
+plus three-finger tap for middle click. The IQS5xx I2C bus is configured for
+100 kHz.
+
 Flashing example for this keyboard:
 
     make girasole40:default:flash
