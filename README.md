@@ -163,6 +163,21 @@ Fix the top & bottom case by screw holes on left & right side using M2 screw (8m
 ### Firmware binary of default layout (no Vial support)
 [girasole40_default.uf2](girasole40_default.uf2)
 
+|Windows Layers|Mac Layers|
+|--|--|
+|Layer 0<br>![Layer 0](images/default_keymap/Layer0.png)|Layer 4<br>![Layer 4](images/default_keymap/Layer4.png)|
+|Layer 1<br>![Layer 1](images/default_keymap/Layer1.png)|Layer 5<br>![Layer 5](images/default_keymap/Layer5.png)|
+|Layer 2<br>![Layer 2](images/default_keymap/Layer2.png)|Layer 6<br>![Layer 6](images/default_keymap/Layer6.png)|
+
+* Combos
+  - Q + W = ESC
+  - S + D = Tab
+  - O + P = -
+  - L + Enter = ;
+  - F2 + F3 = F1
+  - F10 + F11 = F12
+  - 9 + 0 = =
+
 ### Vial support
 
 [girasole40_vial.uf2](girasole40_vial.uf2)
