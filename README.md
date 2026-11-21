@@ -190,4 +190,4 @@ stable communication.
 
 When Vial asks to unlock the keyboard, hold the top-left and top-right keys
 (Q and P in the default base layer). Clear EEPROM once after replacing an
-older VIA firmware so the Vial keymap and default combos are initialized.
+older dynamic-keymap firmware so the Vial keymap and default combos are initialized.
